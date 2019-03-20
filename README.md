@@ -1,6 +1,6 @@
 # ArduinoHourglass
 10/04/2018 A little object that uses two 8x8 LED Matrix and a tilt switch to display time.
-Code is commented in French.
+Code is commented in French. This is an image of the wiring i used, if the hourglass behaves with 'gravity' upside-down, try rotating the tilt switch ;)
 
 ![This is the wiring](https://raw.githubusercontent.com/Zblay/ArduinoHourglass/master/HourGlass.png)
 
