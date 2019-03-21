@@ -1,7 +1,7 @@
 # ArduinoHourglass
 A little object that uses two 8x8 LED Matrix and a tilt switch to display time.
 
-It is thought as a Chess/Go Game clock : it keeps track of time for 2 players, after each move, it has to be flipped.
+It is thought as a Chess/Go Game clock : it keeps track of time for 2 players, after each move, it has to be flipped and it'll display the remaining time of current player. 
 Different time presets can be chosen when initialising : 15mn, 30mn, 45mn, 1h. 
 
 
