@@ -6,7 +6,7 @@
 
 const int buttonPin = 10;                                       // The pin where the button is attached
 int buttonState = 0;                                            // a boolean where to store the state of the button
-int Counter = 0;                                                // a counter that will be incremented or decremented
+int TimeSelecterCounter = 0;                                                // a counter that will be incremented or decremented
 
 unsigned long TimeAtPress=0;                                    // a variable where to store the time at which the button is pressed
 unsigned long TimeAtRelease=0;                                  // a variable where to store the time at which the button is realeased
@@ -49,14 +49,14 @@ void loop() {
       TimePressed = millis() - TimeAtPress ;                    //Calculate Elapsed Time
         if (TimePressed <= TimeShortPress )                     //first, check if the time was shorter than a ShortPress
           {   
-           Counter = Counter+1;                                 //Increment counter if button i dashed
+           TimeSelecterCounter = TimeSelecterCounter+1;                                 //Increment counter if button i dashed
           } 
 
         else if( TimePressed <= TimeLongPress)
           {
-            Counter= Counter-1 ;
+            TimeSelecterCounter= TimeSelecterCounter-1 ;
           }   
           
   } 
-  Serial.println(Counter);
+  Serial.println(TimeSelecterCounter);
 }
