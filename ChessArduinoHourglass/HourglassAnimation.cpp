@@ -1718,7 +1718,7 @@ void HourglassAnimation::DisplayStateAtTimeIndex (int TimeIndex, int BottomMatri
   HourGlass.clearDisplay(BottomMatrixAddress);
   //HourGlass.clearDisplay(TopMatrixAddress);
   DisplayFilledMatrix(TopMatrixAddress);
-  for (int i = 0 ; i <= TimeIndex - 1; i++) { // the -1 is necessary, otherwise, the SandGrain that is to fall next has already fallen, it causes problems
+  for (int i = 1 ; i <= TimeIndex -1; i++) { // the -1 is necessary, otherwise, the SandGrain that is to fall next has already fallen, it causes problems
     TopMatrixSandGrainPosition(i, TopMatrixAddress);
     delay(DisplayStateAtTimeIndexDelayTime);
     BottomMatrixSandGrainPosition(i, BottomMatrixAddress);
