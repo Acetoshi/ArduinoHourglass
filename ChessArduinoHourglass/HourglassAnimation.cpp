@@ -43,6 +43,13 @@ void HourglassAnimation::TimeMenuIcons(int TimeSelecter, int address) {
       HourGlass.setLed(address, 5, 0, true);
       HourGlass.setLed(address, 4, 0, true);
       break;
+
+      case 4:                                     //Demo Mode : 60 Seconds
+      HourGlass.setLed(address, 3, 3, true);
+      HourGlass.setLed(address, 4, 3, true);
+      HourGlass.setLed(address, 3, 4, true);
+      HourGlass.setLed(address, 4, 4, true);
+      break;
   }
 }
 

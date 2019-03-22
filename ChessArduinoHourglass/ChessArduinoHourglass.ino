@@ -39,7 +39,7 @@ int BottomMatrixAddress = 0;
 
 // Time Variables
 int SelectedPlayTime = 0;                       //A counter that permits the user to select a preset time
-int temps_propose[] = {900, 1800, 2700, 3600};  // Four different time presets (15, 30, 45 and 60 minutes)
+int temps_propose[] = {900, 1800, 2700, 3600, 60};  // Different time presets (15, 30, 45 and 60 minutes, 60 seconds is Demo mode)
 unsigned long TotalTimeForEachPlayer = 0;       //Total amount of time for each player
 unsigned long TimeAtStart = 0;                  //The time ( value of millis() ) when the first player makes his move
 unsigned long TimeElapsedP1 = 0;                //Elapsed time for each player
@@ -191,9 +191,9 @@ int TimeSelecter() {                                              // This time s
       {
         TimeSelecterCounter = 0;
       }
-      else if (TimeSelecterCounter > 3 )
+      else if (TimeSelecterCounter > 4 )
       {
-        TimeSelecterCounter = 3;
+        TimeSelecterCounter = 4;
       }
 
       hourglassanimation.DisplayTimeMenu(TimeSelecterCounter, TopMatrixAddress);  // Displays an time menu that corresponds to the time counter, so that the user has a feedback
